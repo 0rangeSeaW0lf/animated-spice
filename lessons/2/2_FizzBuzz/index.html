@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fizz Buzz</title>
+    <link rel="stylesheet" href="css/master.css" type="text/css" />
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+</head>
+<body ng-app="myApp">
+  <h1>Challenge Two</h1>
+  <div ng-controller="myCtrl">
+    <div ng-repeat="number in numbers">
+      <div ng-if="number % 3 != 0 && number % 5 != 0 && number % 15 != 0">
+        {{ number }} 
+      </div>
+      <div ng-if="number % 15 == 0">
+        "FizzBuzz"
+      </div>
+      <div ng-if="number % 3 == 0 && number % 15 != 0">
+        "Fizz"
+      </div>
+      <div ng-if="number % 5 == 0 && number % 15 != 0">
+        "Buzz"
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
