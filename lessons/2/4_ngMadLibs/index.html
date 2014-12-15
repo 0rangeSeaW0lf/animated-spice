@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" ng-app="">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>ngMadLibs</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+        <link rel="stylesheet" href="css/master.css" type="text/css" />
+        
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/angular.js"></script>
+        <script type="text/javascript" src="js/master.js"></script>
+    </head>
+    <body class="container-fluid">
+        <div class="col-xs-8 col-xs-offset-2 booyah-box">
+            <div class="row">
+                <div class="col-xs-2">
+                    <img src="img/mad-lib-happy-face.png" alt="mad-lib-happy-face" class="img-responsive center">
+                </div>
+                <div class="col-xs-10 text-center">
+                    <div class="col-xs-12">
+                        <img src="img/ng-mad-libs-logo.png" alt="" class="img-responsive center">
+                    </div>
+                    <div class="col-xs-12">
+                        <h1>Automate This!</h1>
+                    </div>
+                </div>
+            </div>
+        <br />
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1">
+                    <h2>Provide the following words:</h2>
+                    <div class="text-center">
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4"><input type="text" name="female_name" ng-model="data.female_name" placeholder="Female Name"/></div>
+                            <div class="col-xs-4"><input type="text" name="job_title" ng-model="data.job_title"  placeholder="Job Title"/></div>
+                            <div class="col-xs-4"><input type="text" name="tedious_task" ng-model="data.tedious_task" placeholder="Tedious Task"/></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4"><input type="text" name="dirty_task" ng-model="data.dirty_task" placeholder="Dirty Task"/></div>
+                            <div class="col-xs-4"><input type="text" name="celebrity" ng-model="data.celebrity" placeholder="Celebrity"/></div>
+                            <div class="col-xs-4"><input type="text" name="useless_skill" ng-model="data.useless_skill" placeholder="Useless Skill"/></div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-xs-4"><input type="text" name="adjective" ng-model="data.adjective" placeholder="Adjective"/></div>
+                            <div class="col-xs-4"><input type="text" name="obnoxiuous_celebrity" ng-model="data.obnoxiuous_celebrity" placeholder="Obnoxiuous Celebrity"/></div>
+                            <div class="col-xs-4"><input type="text" name="huge_number" ng-model="data.huge_number" placeholder="Huge Number"/></div>
+                        </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1" ng-init="data = {female_name: '(Female Name)', job_title: '(Job)', tedious_task: '(Tedious Task)', dirty_task: '(Dirty Task)', celebrity: '(Celebrity)', useless_skill: '(Useless Skill)', adjective: '(Adjective)', obnoxiuous_celebrity: '(Obnoxiuous Celebrity)', huge_number: '(Huge Number)'}">
+                                <p class="main-text"><span>{{ data.female_name }}</span> was a {{ data.job_title }} who loved technology. Although he loved parts of her job, he absolutely hated  {{ data.tedious_task }} and {{ data.dirty_task }}. So, {{ data.female_name }} met with his life mentor {{ data.celebrity }} who told his to learn how to {{ data.useless_skill }} with Thinkful. Thinkful didn't offer a course on {{ data.useless_skill }} so he studied programming instead. What a great decision! With his new skills, {{ data.female_name }} built a(n) {{ data.adjective }} script named {{ data.obnoxiuous_celebrity }} that not only loved {{ data.dirty_task }} but did it {{ data.huge_number }} times faster. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
